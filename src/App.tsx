@@ -43,13 +43,24 @@ function App() {
 
       <div className="py-10">
         <header>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-6">
             <h1 className="text-3xl font-medium text-gray-900">Hotels</h1>
           </div>
         </header>
         <main>
-          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8"></div>
+          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 pb-10">
+            Hello world
+          </div>
         </main>
+        <footer className="bg-white border-t border-gray-200">
+          <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+            <div className="mt-8 md:order-1 md:mt-0">
+              <p className="text-center text-sm leading-5 text-[#403f3f]">
+                Company No. 2661520 © Guestline 2023. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
