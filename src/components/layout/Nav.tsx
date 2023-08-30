@@ -8,12 +8,12 @@ export const Nav = () => {
         <div className="flex">
           <div className="flex flex-shrink-0 items-center">
             <img
-              className="block h-10 w-auto lg:hidden"
+              className="block h-10 w-auto sm:hidden"
               src="/img/guestline-icon.png"
               alt="Your Company"
             />
             <img
-              className="hidden h-11 w-auto lg:block"
+              className="hidden h-11 w-auto sm:block"
               src="/img/guestline-logo.png"
               alt="Guestline"
             />
