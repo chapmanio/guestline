@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
-import Nav from "./Nav";
+import { Nav } from "./Nav";
+import { Footer } from "./Footer";
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <div className="min-h-full">
       <Nav />
@@ -13,5 +13,3 @@ const Layout = () => {
     </div>
   );
 };
-
-export default Layout;

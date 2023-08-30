@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+export const Nav = () => {
   // TODO: active link selection and theme colors?
   return (
     <nav className="border-b border-gray-200 bg-white">
@@ -44,5 +44,3 @@ const Nav = () => {
     </nav>
   );
 };
-
-export default Nav;

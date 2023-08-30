@@ -1,11 +1,9 @@
-import Page from "../components/layout/Page";
+import { Page } from "../components/layout";
 
-const ErrorPage = () => {
+export const ErrorPage = () => {
   return (
     <Page title="Something went wrong">
       <h2>Page not found</h2>
     </Page>
   );
 };
-
-export default ErrorPage;

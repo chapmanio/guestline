@@ -1,10 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import ErrorPage from "./pages/ErrorPage";
-import Layout from "./components/layout/Layout";
-import HomePage from "./pages/HomePage";
-import HotelPage from "./pages/HotelPage";
+import { Layout } from "./components/layout";
+import { HomePage, HotelPage, ErrorPage } from "./pages";
 
-const App = () => {
+export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -15,5 +13,3 @@ const App = () => {
     </Routes>
   );
 };
-
-export default App;

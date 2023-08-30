@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
-
 type PageProps = {
   title: string;
   children: React.ReactNode;
 };
 
-const Page = ({ title, children }: PageProps) => {
+export const Page = ({ title, children }: PageProps) => {
   return (
     <>
       <header>
@@ -21,5 +19,3 @@ const Page = ({ title, children }: PageProps) => {
     </>
   );
 };
-
-export default Page;
