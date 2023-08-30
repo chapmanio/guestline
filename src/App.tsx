@@ -19,7 +19,7 @@ function App() {
             <div className="hidden sm:-my-px sm:ml-9 sm:flex sm:space-x-8">
               <a
                 href="/"
-                className="border-indigo-500 text-gray-900 inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium"
+                className="border-[#009fe3] text-[#009fe3] inline-flex items-center border-b-2 px-1 pt-1 text-sm font-light"
                 aria-current="page"
               >
                 Hotels
@@ -32,7 +32,7 @@ function App() {
           <div className="space-y-1 pb-3">
             <a
               href="/"
-              className="border-indigo-500 bg-indigo-50 text-indigo-700 block border-l-4 py-2 pl-3 pr-4 text-base font-medium"
+              className="border-[#009fe3] text-[#009fe3] block border-l-2 py-2 pl-3 pr-4 text-base font-light"
               aria-current="page"
             >
               Hotels
@@ -44,9 +44,7 @@ function App() {
       <div className="py-10">
         <header>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900">
-              Hotels
-            </h1>
+            <h1 className="text-3xl font-medium text-gray-900">Hotels</h1>
           </div>
         </header>
         <main>
