@@ -154,7 +154,7 @@ export const HomePage = () => {
                         id="minAdults"
                         label="Adults"
                         onChange={onChangeMinAdults}
-                        value={Number(searchParams.get("minAdults"))}
+                        value={Number(searchParams.get("minAdults") || 1)}
                         min={1}
                       />
                       <NumberRange
@@ -242,7 +242,7 @@ export const HomePage = () => {
                         id="minAdults"
                         label="Adults"
                         onChange={onChangeMinAdults}
-                        value={Number(searchParams.get("minAdults"))}
+                        value={Number(searchParams.get("minAdults") || 1)}
                         min={1}
                       />
                       <NumberRange
