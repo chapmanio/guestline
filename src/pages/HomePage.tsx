@@ -119,7 +119,7 @@ export const HomePage = () => {
               </div>
 
               <form className="mt-4 border-t border-gray-200">
-                <div className="border-t border-gray-200 px-4 py-6">
+                <div className="px-4 py-6">
                   <h3 className="font-medium text-gray-900">Star rating</h3>
                   <div className="pt-6">
                     <div className="space-y-4">
