@@ -60,7 +60,7 @@ export type ApiHotel = {
   email: string;
   images: {
     url: string;
-  };
+  }[];
   checkInHours: string;
   checkInMinutes: string;
   checkOutHours: string;
