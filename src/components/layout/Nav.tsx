@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Nav = () => {
   // TODO: active link selection and theme colors?
@@ -19,26 +19,38 @@ export const Nav = () => {
             />
           </div>
           <div className="hidden sm:-my-px sm:ml-9 sm:flex sm:space-x-8">
-            <Link
+            <NavLink
               to="/"
-              className="border-[#009fe3] text-[#009fe3] inline-flex items-center border-b-2 px-1 pt-1 text-sm font-light"
-              aria-current="page"
+              className={({ isActive }) => {
+                return (
+                  "inline-flex items-center border-b-2 px-1 pt-1 text-sm font-light " +
+                  (isActive
+                    ? "border-[#009fe3] text-[#009fe3]"
+                    : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700")
+                );
+              }}
             >
               Hotels
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
 
       <div className="sm:hidden" id="mobile-menu">
         <div className="space-y-1 pb-3">
-          <Link
+          <NavLink
             to="/"
-            className="border-[#009fe3] text-[#009fe3] block border-l-2 py-2 pl-3 pr-4 text-base font-light"
-            aria-current="page"
+            className={({ isActive }) => {
+              return (
+                "block border-l-2 py-2 pl-3 pr-4 text-base font-light " +
+                (isActive
+                  ? "border-[#009fe3] text-[#009fe3]"
+                  : "border-transparent text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800")
+              );
+            }}
           >
             Hotels
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>
