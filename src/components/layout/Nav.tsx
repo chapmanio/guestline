@@ -1,7 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Nav = () => {
-  // TODO: active link selection and theme colors?
   return (
     <nav className="border-b border-gray-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 lg:py-9">

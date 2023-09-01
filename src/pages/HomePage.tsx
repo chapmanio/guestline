@@ -67,7 +67,6 @@ export const HomePage = () => {
     });
   };
 
-  // TODO: filter
   return (
     <Page>
       <div>
