@@ -12,10 +12,8 @@ export const HotelPage = () => {
     <Page>
       {isLoading ? (
         <HotelDetailsSkeleton />
-      ) : data ? (
-        <HotelDetails hotel={data} />
       ) : (
-        "Something went wrong"
+        <>{data && <HotelDetails hotel={data} />}</>
       )}
     </Page>
   );
