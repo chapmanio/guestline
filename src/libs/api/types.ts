@@ -1,4 +1,4 @@
-type Room = {
+export type Room = {
   id: string;
   bedConfiguration: "Both" | "Double" | "Twin";
   disabledAccess: boolean;
@@ -20,7 +20,7 @@ type Room = {
   shortDescription: string;
 };
 
-type RatePlan = {
+export type RatePlan = {
   id: string;
   cancellationPolicy?: {
     amount?: number;
@@ -28,7 +28,7 @@ type RatePlan = {
     days?: number;
     hour?: string;
     name: string;
-    penalty: "Non cancelable" | "Standard Cancellation";
+    penalty: "Non cancelable" | "Percentage" | "Standard Cancellation";
     text: string;
   };
   longDescription?: string;
