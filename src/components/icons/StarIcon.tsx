@@ -1,9 +1,13 @@
-export const StarIcon = () => (
+type StarIconProps = {
+  size?: 4 | 5;
+};
+
+export const StarIcon = ({ size = 4 }: StarIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
-    className="w-4 h-4"
+    className={`w-${size} h-${size}`}
   >
     <path
       fillRule="evenodd"
