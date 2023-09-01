@@ -3,7 +3,7 @@ import { renderHook, waitFor } from "@testing-library/react";
 import { mockedHotels, mockedRoomsAndRates, wrapper } from "../../tests";
 import { useHotel } from ".";
 
-describe("useHotels", () => {
+describe("useHotel", () => {
   it("retrieves a hotel based on supplied id", async () => {
     const hotelId = "fake-hotel-1";
 
