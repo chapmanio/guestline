@@ -20,10 +20,16 @@ describe("useHotels", () => {
 
     // The default handlers respond with the same rooms and rates for every call,
     // so we merge that default data with each hotel to create the expected result
-    const mergedHotels = mockedHotels.map((hotel) => ({
-      ...hotel,
-      ...mockedRoomsAndRates,
-    })) as Hotel[];
+    const mergedHotels = [
+      {
+        ...mockedHotels[0],
+        ...mockedRoomsAndRates,
+      },
+      {
+        ...mockedHotels[1],
+        ...mockedRoomsAndRates,
+      },
+    ];
 
     expect(result.current.data).toEqual(mergedHotels);
   });
