@@ -35,18 +35,18 @@ describe("useHotels", () => {
   });
 
   it("filters based on star rating", async () => {
-    const fakeFourStarHotel: ApiHotel = createFakeHotel({
+    const fakeFiveStarHotel: ApiHotel = createFakeHotel({
       id: "fake-hotel-3",
-      starRating: "4",
+      starRating: "5",
     });
 
     server.use(
       rest.get("https://obmng.dbm.guestline.net/api/hotels", (_req, res, ctx) =>
-        res(ctx.json<ApiHotel[]>([...mockedHotels, fakeFourStarHotel])),
+        res(ctx.json<ApiHotel[]>([...mockedHotels, fakeFiveStarHotel])),
       ),
     );
 
-    const { result } = renderHook(() => useHotels({ starRating: 4 }), {
+    const { result } = renderHook(() => useHotels({ starRating: 5 }), {
       wrapper,
     });
 
@@ -55,7 +55,7 @@ describe("useHotels", () => {
     // Only the fake hotel above should be returned
     expect(result.current.data).toEqual([
       {
-        ...fakeFourStarHotel,
+        ...fakeFiveStarHotel,
         ...mockedRoomsAndRates,
       },
     ]);

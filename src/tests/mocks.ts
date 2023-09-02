@@ -40,14 +40,21 @@ export const createFakeRatePlan = (overrides: Partial<RatePlan> = {}) => {
 };
 
 export const mockedHotels: ApiHotel[] = [
-  createFakeHotel({ id: "fake-hotel-1" }),
-  createFakeHotel({ id: "fake-hotel-2" }),
+  createFakeHotel({
+    id: "fake-hotel-1",
+    name: "Fake Hotel 1",
+  }),
+  createFakeHotel({
+    id: "fake-hotel-2",
+    name: "Fake Hotel 2",
+    starRating: "4",
+  }),
 ];
 
 export const mockedRoomsAndRates: ApiRoomRate = {
   rooms: [
-    createFakeRoom({ id: "fake-room-1" }),
-    createFakeRoom({ id: "fake-room-2" }),
+    createFakeRoom({ id: "fake-room-1", name: "Fake Room 1" }),
+    createFakeRoom({ id: "fake-room-2", name: "Fake Room 2" }),
   ],
   ratePlans: [
     createFakeRatePlan({ id: "fake-rate-1" }),
